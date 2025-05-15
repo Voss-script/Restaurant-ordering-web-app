@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    font-family: 'Smythe', sans-serif;
+    color: 000;
+    background: whitesmoke;
+    font-weight: 400;
+    font-size: 28px;
+    box-sizing: border-box;
+}
+
+/* typography */
+h2{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 24px;
+    text-align: center;
+}
+
+.price, input,label{
+    font-size: 20px;
+}
+
+
+button{
+    padding: 20px 0;
+    background-color: #16db99;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    background-color: fff;
+}
+
+.content-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.menu-container{
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.btn-images{
+    padding-top: 20px;
+    width: 50px;
+}
+
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.menu-item .left {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.add-to-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.basket{
+    margin-top: 48px;
+    display: none;
+}
+
+.order-el{
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 2px solid #393333;
+}
+
+.order-item-el{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-item-el .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.tota-price-el{
+    margin: 16px 0 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 525px;
+    height: 625px;
+    display: none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 24px;
+}
+
+.modal-close-btn{
+    text-align: end;
+    font-family: 'Smythe', Arial, Helvetica, sans-serif;
+    color: #8b8b8b;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.modal-close-btn:hover, .modal-close-btn:focus{
+    color: #16db99;
+}
+
+.modal-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 24px;
+    gap: 28px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form input{
+    padding: 10px 24px;
+}
+
+.thank-you-message-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    background-color: #ecfdf5;
+    border-radius: 10px;
+}
+
+.thank-you-message{
+    color: #065f46;
+}
+
+.small{
+    font-size: 16px;
+    color: #8b8b8b;
+}
+.remove{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.pay-btn, .complete-order-btn{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}

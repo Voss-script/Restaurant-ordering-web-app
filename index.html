@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container" id="main-content">
+
+            <header>
+                <img src="assets/header.png" alt="a restaurant banner with a picture of a burger">
+            </header>
+                
+                <main>
+                    <section class="content-container">
+                        <div class="menu-container" id="menu-container">
+                           
+                        </div>
+                        <div class="basket" id="basket">
+                            <h3>Your order </h3>
+                            <div class="order-el" id="order-el"></div>
+                            <div class="total-price-el" id="total-price-el"></div>
+                            <button class="complete-order-btn" id="complete-order-btn">COMPLETE ORDER</button>
+                        </div>
+                    </section>
+                </main>
+                
+        </div>
+        <div class="modal" id="modal">
+
+            <div class="modal-close-btn-container">
+                <p class="modal-close-btn" id="modal-close-btn">X</p>
+            </div>
+
+            <div class="modal-inner">
+                <h5>Enter card details</h5>
+                <form id="payment-form">
+
+                    <div class="full-name">
+                        <label for="full-name">Full name</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="E.g James Bond" required>
+                    </div>
+
+                    <div class="card-number">
+                        <label for="card-number">Card number</label>
+                        <input type="number" id="card-numbber" name="card-numbber" placeholder="E.g 1234 5678 9786" required>
+                    </div>
+
+                    <div class="cvv">
+                        <label for="cvv">CVV</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="E.g 007" maxlength="3" required>
+                    </div>
+
+                    <button type="submit" class="pay-btn" id="pay-btn" >PAY</button>
+                    
+                </form>
+            </div>
+        </div>
+	<script type="module" src="index.js"></script>
+    </body>
+</html>
+
